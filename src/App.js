@@ -95,7 +95,7 @@ function App() {
 				/>
 				<Routes>
 					<Route
-						path="/"
+						path="/React-Task-Tracker"
 						element={
 							<>
 								{showAddTask && <AddTask onAdd={addTask} />}
@@ -111,7 +111,7 @@ function App() {
 							</>
 						}
 					/>
-					<Route path="/about" element={<About />} />
+					<Route path="React-Task-Tracker/about" element={<About />} />
 				</Routes>
 				<Footer />
 			</div>

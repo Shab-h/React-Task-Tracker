@@ -5,6 +5,24 @@
       "day": "Monday at 12:30pm ",
       "reminder": true,
       "id": 1
+    },
+    {
+      "text": "dfsdf",
+      "day": "dsfsdf",
+      "reminder": true,
+      "id": 2
+    },
+    {
+      "text": "sdfdsf",
+      "day": "dfsfsffdf",
+      "reminder": true,
+      "id": 3
+    },
+    {
+      "text": "dsfdsf",
+      "day": "dsfdfsfdff",
+      "reminder": false,
+      "id": 4
     }
   ]
 }
