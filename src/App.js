@@ -111,7 +111,7 @@ function App() {
 							</>
 						}
 					/>
-					<Route path="React-Task-Tracker/about" element={<About />} />
+					<Route path="/React-Task-Tracker/about" element={<About />} />
 				</Routes>
 				<Footer />
 			</div>
