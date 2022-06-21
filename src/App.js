@@ -31,7 +31,7 @@ function App() {
 	// Fetch Task
 	const fetchTask = async (id) => {
 		const res = await fetch(
-			`https://my-json-server.typicode.com/Shab-h/React-Task-Tracker-Json-Server/${id}`
+			`https://my-json-server.typicode.com/Shab-h/React-Task-Tracker-Json-Server/task/${id}`
 		)
 		const data = await res.json()
 
@@ -65,7 +65,7 @@ function App() {
 	// Delete Tassk
 	const deleteTask = async (id) => {
 		await fetch(
-			`https://my-json-server.typicode.com/Shab-h/React-Task-Tracker-Json-Server/${id}`,
+			`https://my-json-server.typicode.com/Shab-h/React-Task-Tracker-Json-Server/tasks/${id}`,
 			{
 				method: "DELETE",
 			}
@@ -80,7 +80,7 @@ function App() {
 		const updTask = { ...taskToToggle, reminder: !taskToToggle.reminder }
 
 		const res = await fetch(
-			`https://my-json-server.typicode.com/Shab-h/React-Task-Tracker-Json-Server/${id}`,
+			`https://my-json-server.typicode.com/Shab-h/React-Task-Tracker-Json-Server/tasks/${id}`,
 			{
 				method: "PUT",
 				headers: {
@@ -108,7 +108,7 @@ function App() {
 				/>
 				<Routes>
 					<Route
-						path="/React-Task-Tracker/"
+						path="/React-Task-Tracker"
 						element={
 							<>
 								{showAddTask && <AddTask onAdd={addTask} />}
