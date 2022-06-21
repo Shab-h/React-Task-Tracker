@@ -42,7 +42,7 @@ function App() {
 	const addTask = async (task) => {
 		// --- Add task with Json Server ---
 		const res = await fetch(
-			"https://my-json-server.typicode.com/Shab-h/React-Task-Tracker-Json-Server/tasks",
+			"https://my-json-server.typicode.com/Shab-h/React-Task-Tracker-Json-Server/db",
 			{
 				method: "POST",
 				headers: {
